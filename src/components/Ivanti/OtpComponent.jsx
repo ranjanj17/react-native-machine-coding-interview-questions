@@ -19,7 +19,7 @@ const OtpComponent = ({ size }) => {
             const newOtp = [...otp];
 
             for (let i = 0; i < text.length; i++) {
-                newOtp[index + i] = text[i];
+                newOtp[i] = text[i];
             }
             setOtp(newOtp);
             inputRefs.current[size - 1].focus();
@@ -88,7 +88,6 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         marginTop: 20,
-        backgroundColor: "white",
         display: "flex",
         flexDirection: "column",
     },
@@ -106,7 +105,8 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         marginTop: 40,
         padding: 5,
-        textAlign: "center"
+        textAlign: "center",
+        backgroundColor: "white"
     }
 
 })
