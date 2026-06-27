@@ -4,6 +4,7 @@ import LoaderComponent from './src/components/LoaderComponent';
 import ColorGrid from './src/components/ColorGrid';
 import InfiniteScroll from './src/components/InfiniteScroll';
 import Customers from './src/components/RobinAi/Customers';
+import OtpComponent from './src/components/Ivanti/OtpComponent';
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
         {/* <LoaderComponent /> */}
         {/* <ColorGrid /> */}
         {/* <InfiniteScroll /> */}
-        <Customers />
+        {/* <Customers /> */}
+        <OtpComponent size={4} />
       </View>
     </ScrollView>
 
